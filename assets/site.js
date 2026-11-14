@@ -30,3 +30,54 @@ videoButton?.addEventListener('click', () => {
   videoButton.replaceWith(frame);
   frame.focus();
 });
+const cover = document.querySelector('.hero-visual');
+if (cover) {
+  const english = document.documentElement.lang === 'en';
+  const picture = cover.querySelector('img');
+  const caption = cover.querySelector('figcaption');
+  const link = document.createElement('a');
+  picture.replaceWith(link);
+  link.append(picture);
+  const project = document.querySelector('.project-feature .image-link');
+  const slides = [[picture.src, picture.alt, ...Array.from(caption.children, el => el.textContent), project.href]];
+  document.querySelectorAll('.study-preview').forEach(card => {
+    const image = card.querySelector('img');
+    slides.push([image.src, image.alt, card.querySelector('.game-tag').textContent,
+      english ? 'Game analysis' : '游戏拆解', card.querySelector('a').href]);
+  });
+  let index = 0;
+  function show() {
+    const [src, alt, title, category, href] = slides[index];
+    picture.src = src;
+    picture.alt = alt;
+    link.href = href;
+    caption.children[0].textContent = title;
+    caption.children[1].textContent = category;
+  }
+  const controls = document.createElement('div');
+  controls.className = 'cover-controls';
+  cover.append(controls);
+  let timer;
+  function advance(step) {
+    index = (index + step + slides.length) % slides.length;
+    show();
+  }
+  function button(label, action) {
+    const el = document.createElement('button');
+    el.type = 'button';
+    el.textContent = label;
+    el.onclick = action;
+    controls.append(el);
+    return el;
+  }
+  button(english ? 'Previous' : '上一张', () => { play(false); advance(-1); });
+  const toggle = button('', () => play(!timer));
+  button(english ? 'Next' : '下一张', () => { play(false); advance(1); });
+  function play(on) {
+    clearInterval(timer);
+    timer = on ? setInterval(() => advance(1), 6500) : null;
+    toggle.textContent = on ? (english ? 'Pause' : '暂停') : (english ? 'Play' : '播放');
+  }
+  show();
+  play(!matchMedia('(prefers-reduced-motion: reduce)').matches);
+}
