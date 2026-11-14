@@ -13,3 +13,4 @@ html{scroll-behavior:auto}.article-section{scroll-margin-top:0}
 
 .work-tags{list-style:none;display:flex;flex-wrap:wrap;gap:6px 8px;padding:0;margin:10px 0 18px}.work-tags li{font-size:12px;line-height:1.5;border:1px solid var(--line);border-radius:20px;padding:3px 11px;background:var(--surface);color:var(--text)}
 .cover-controls{display:flex;gap:.6rem;margin-top:.75rem}.cover-controls button{font:inherit;color:inherit;background:transparent;border:1px solid currentColor;border-radius:.4rem;padding:.25rem .65rem;cursor:pointer}.work-tags .game-tag{font-weight:700}
+.archive{padding-block:clamp(3rem,7vw,6rem)}.archive article{max-width:76ch;padding-block:1.5rem;border-bottom:1px solid currentColor}.archive article h2{font-size:clamp(1.45rem,3vw,2rem);line-height:1.2;margin:.5rem 0}.archive select{font:inherit;padding:.4rem}.archive .text-link{margin-right:1rem}
