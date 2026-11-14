@@ -9,38 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     environment: github-pages
     steps:
-      - name: Prepare bilingual portfolio
-        shell: python
-        run: |
-          from pathlib import Path
-          from urllib.request import Request, urlopen
-          import re
-          from concurrent.futures import ThreadPoolExecutor
-          source = 'https://anchor-level-design-portfolio-1113.dewypage16.chatgpt.site'
-          dest = 'https://yangzhiheng03-cloud.github.io'
-          root = Path('site')
-          assets = {'/assets/style.css', '/assets/site.js', '/assets/studies/dimensions.json'}
-          def fetch(path):
-              with urlopen(Request(source + path, headers={'User-Agent':'Portfolio-public-check'}), timeout=90) as r:
-                  return r.read()
-          for base in ['/', '/en/']:
-              for slug in ['', 'projects/anchor/', 'studies/animal-well/', 'studies/witness/', 'studies/wuthering-waves/', 'studies/resource-rhythm/']:
-                  path = base + slug
-                  html = fetch(path).decode()
-                  assert '<main' in html and '</footer>' in html
-                  html = html.split('</footer>')[0] + '</footer></body></html>'
-                  html = html.replace(source, dest)
-                  assets.update(re.findall(r'(?:src|href)="(/assets/[^"]+)"', html))
-                  target = root / path.strip('/') / 'index.html'
-                  target.parent.mkdir(parents=True, exist_ok=True)
-                  target.write_text(html, encoding='utf-8')
-          def save(path):
-              target = root / path.lstrip('/')
-              target.parent.mkdir(parents=True, exist_ok=True)
-              target.write_bytes(fetch(path))
-          with ThreadPoolExecutor(max_workers=4) as pool:
-              list(pool.map(save, sorted(assets)))
+      - uses: actions/checkout@v4
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: .
       - uses: actions/deploy-pages@v4
