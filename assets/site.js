@@ -81,3 +81,14 @@ if (cover) {
   show();
   play(!matchMedia('(prefers-reduced-motion: reduce)').matches);
 }
+const category = document.querySelector('#category');
+if (category) {
+  document.querySelector('#category-control').hidden = false;
+  function filterProjects() {
+    for (const project of document.querySelectorAll('[data-category]')) {
+      project.hidden = category.value !== '' && project.dataset.category !== category.value;
+    }
+  }
+  category.addEventListener('change', filterProjects);
+  filterProjects();
+}
