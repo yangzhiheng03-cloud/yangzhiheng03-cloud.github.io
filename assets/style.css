@@ -42,3 +42,23 @@ html{scroll-behavior:auto}.article-section{scroll-margin-top:0}
 .folio-personas{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,13rem),1fr));gap:1rem}
 @media(max-width:720px){.folio-intro{grid-template-columns:1fr}.folio-example{grid-template-columns:1fr}.folio-example a{max-width:17rem}.folio .actions{align-items:center}}
 .map-notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:.8rem 1.5rem;padding-top:1rem}.map-notes p{margin:.4rem 0;font-size:.95rem}
+
+.basinhold .project-heading{padding-bottom:1.5rem}
+.board-tools{display:flex;align-items:baseline;gap:.8rem;flex-wrap:wrap;padding:.8rem 0;border-block:1px solid var(--line)}
+.board-tools label,.board-tools select,.board-contents summary{font:inherit;font-size:.9rem}
+.board-tools select{max-width:100%;padding:.4rem .65rem;background:var(--surface);color:var(--text);border:1px solid var(--line);border-radius:var(--radius)}
+.board-contents{margin-right:auto}.board-contents[open]{flex-basis:100%}.board-contents summary,.board-panel summary{cursor:pointer}
+.board-contents ol{padding-left:1.6rem;columns:2;column-gap:2rem}.board-contents li{break-inside:avoid;padding:.2rem 0}
+.board-page{padding-top:2.6rem;scroll-margin-top:5rem}
+.board-page h2{display:flex;align-items:baseline;gap:1rem;font-size:clamp(1.35rem,2.6vw,2.15rem);line-height:1.25;margin:0 0 .9rem}
+.board-page h2 span{color:var(--muted);font-size:.85rem;font-variant-numeric:tabular-nums}
+.board-zoom{display:block;cursor:zoom-in}.board-zoom img{border-radius:var(--radius)}
+.board-reader{display:none}.basinhold[data-view=reader] .board-sheet{display:none}
+.basinhold[data-view=reader] .board-reader{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,25rem),1fr));gap:1.1rem 1.8rem;align-items:start}
+.board-panel{min-width:0;overflow-wrap:anywhere;border-top:1px solid var(--line);padding-top:.85rem}
+.board-panel p{max-width:70ch;margin:.45rem 0;line-height:1.65}
+.board-panel h3{font-size:1.12rem;line-height:1.4;margin:.35rem 0}
+.board-panel summary{color:var(--muted);padding:.45rem 0;font-size:.9rem}
+.basinhold{padding-bottom:4rem}
+@media(max-width:740px){.board-contents ol{columns:1}.board-page{scroll-margin-top:7rem}}
+.basin-steps{margin:.6rem 0;padding-left:1.5rem}.basin-steps li{padding:.15rem 0}

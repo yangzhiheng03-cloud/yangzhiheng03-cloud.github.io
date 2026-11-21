@@ -97,3 +97,15 @@ if (category) {
   category.addEventListener('change', filterProjects);
   filterProjects();
 }
+
+const boardView = document.querySelector('#board-view');
+if (boardView) {
+  const portfolio = boardView.closest('.basinhold');
+  const useReadingView = () => { portfolio.dataset.view = boardView.value; };
+  boardView.value = matchMedia('(max-width: 740px)').matches ? 'reader' : 'layout';
+  useReadingView();
+  boardView.addEventListener('change', useReadingView);
+  portfolio.querySelector('.board-contents').addEventListener('click', event => {
+    if (event.target.closest('a')) event.currentTarget.open = false;
+  });
+}
