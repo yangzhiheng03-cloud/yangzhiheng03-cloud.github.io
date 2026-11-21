@@ -18,3 +18,27 @@ html{scroll-behavior:auto}.article-section{scroll-margin-top:0}
 .prototype-list img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:var(--radius)}
 .prototype-list h3{margin:.7rem 0 .3rem}.prototype-list .study-label{margin:0}
 @media(max-width:680px){.prototype-list{grid-template-columns:1fr;gap:28px}}
+
+/* Project layouts transcribed from the author's portfolio boards. */
+.folio{padding-bottom:4rem}
+.folio-intro{display:grid;grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);align-items:center;gap:clamp(1.5rem,5vw,5rem);padding:2rem 0 3rem}
+.folio-intro h1{font-size:clamp(3rem,7vw,6.4rem);margin:0 0 1rem}
+.folio-intro img{width:100%;height:auto;border-radius:var(--radius)}
+.folio-intro dl{margin:0}.folio-intro dl div{display:grid;grid-template-columns:6rem 1fr;gap:.5rem;padding:.3rem 0;border-bottom:1px solid var(--line)}
+.folio-intro dt{font-size:.8rem;color:var(--muted)}.folio-intro dd{margin:0}
+.folio-nav{display:flex;gap:.6rem 1.6rem;flex-wrap:wrap;border-block:1px solid var(--line);padding:1rem 0}
+.folio-nav a{font-size:.8rem;text-underline-offset:.23em}
+.folio-chapter{padding-top:clamp(2.2rem,5vw,4rem);scroll-margin-top:6rem}
+.folio-chapter h2{font-size:clamp(1.5rem,3vw,2.5rem);line-height:1.16;max-width:38ch}
+.folio-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,29rem),1fr));gap:1.5rem 2rem;align-items:start}
+.folio-panel{min-width:0;margin-bottom:1.35rem;border-top:1px solid var(--line);padding-top:1.2rem}
+.folio-panel h3{font-size:1.2rem;line-height:1.4;margin:1.5rem 0 .6rem}
+.folio-panel h3:first-child{margin-top:0}.folio-panel p{max-width:76ch;margin:.6rem 0 1rem;line-height:1.72}
+.folio-panel figure{margin:1rem 0}.folio-panel figure img{width:100%;height:auto;border-radius:var(--radius)}
+.folio-panel figure a{display:block;cursor:zoom-in}.folio-panel summary{font-size:.85rem;color:var(--muted);padding:.4rem 0;cursor:pointer}
+.figure-copy{border-left:2px solid var(--line);padding:.6rem 1rem}.figure-copy span{display:block}
+.folio-example{display:grid;grid-template-columns:minmax(110px,24%) 1fr;gap:1.2rem;align-items:start;margin:1.4rem 0}
+.folio-example img{width:100%;height:auto}.folio-panel h4{margin:.2rem 0 .5rem;font-size:1.06rem}.folio-example p{margin:.3rem 0}
+.folio-personas{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,13rem),1fr));gap:1rem}
+@media(max-width:720px){.folio-intro{grid-template-columns:1fr}.folio-example{grid-template-columns:1fr}.folio-example a{max-width:17rem}.folio .actions{align-items:center}}
+.map-notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:.8rem 1.5rem;padding-top:1rem}.map-notes p{margin:.4rem 0;font-size:.95rem}
