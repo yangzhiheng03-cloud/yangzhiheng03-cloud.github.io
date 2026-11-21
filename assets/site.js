@@ -43,7 +43,7 @@ if (cover) {
   document.querySelectorAll('.prototype-list article').forEach(card => {
     const image = card.querySelector('img');
     slides.push([image.src, image.alt, card.querySelector('h3').textContent,
-      english ? 'Independent prototype / UE5' : '个人原型 / UE5', card.querySelector('a').href]);
+      card.querySelector('.study-label').textContent, card.querySelector('a').href]);
   });
   document.querySelectorAll('.study-preview').forEach(card => {
     const image = card.querySelector('img');
