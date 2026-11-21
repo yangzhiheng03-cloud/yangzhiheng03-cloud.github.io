@@ -1,3 +1,12 @@
+// The root previously served Chinese HTML and can outlive this script in a browser cache.
+if (['/', '/index.html'].includes(location.pathname) && document.documentElement.lang === 'zh-CN') {
+  const englishHome = new URL(location.href);
+  if (englishHome.searchParams.get('lang') !== 'en') {
+    englishHome.searchParams.set('lang', 'en');
+    location.replace(englishHome.href);
+  }
+}
+
 const themeButton = document.querySelector('[data-theme-toggle]');
 const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
 function setTheme(theme) {
