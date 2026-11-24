@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>《皇室战争》与《云顶之弈》：从圣水到金币的决策节奏 | Klein Yang</title><meta name="description" content="对比即时战术与长期运营，分析资源如何塑造决策，再讨论自走棋怎样减轻学习和操作负担。">
+<title>《皇室战争》与《云顶之弈》：圣水与金币 | Klein Yang</title><meta name="description" content="对比即时战术与长期运营，分析资源如何塑造决策，再讨论自走棋怎样减轻学习和操作负担。">
 <meta name="theme-color" content="#131613"><link rel="canonical" href="https://yangzhiheng03-cloud.github.io/studies/resource-rhythm/">
-<link rel="alternate" hreflang="zh-CN" href="https://yangzhiheng03-cloud.github.io/studies/resource-rhythm/"><link rel="alternate" hreflang="en" href="https://yangzhiheng03-cloud.github.io/en/studies/resource-rhythm/"><link rel="alternate" hreflang="x-default" href="https://yangzhiheng03-cloud.github.io/studies/resource-rhythm/">
-<meta property="og:title" content="《皇室战争》与《云顶之弈》：从圣水到金币的决策节奏 | Klein Yang"><meta property="og:description" content="对比即时战术与长期运营，分析资源如何塑造决策，再讨论自走棋怎样减轻学习和操作负担。"><meta property="og:type" content="website"><meta property="og:image" content="https://yangzhiheng03-cloud.github.io/assets/studies/tft-bench.webp"><meta property="og:url" content="https://yangzhiheng03-cloud.github.io/studies/resource-rhythm/">
+<link rel="alternate" hreflang="zh-CN" href="https://yangzhiheng03-cloud.github.io/studies/resource-rhythm/"><link rel="alternate" hreflang="en" href="https://yangzhiheng03-cloud.github.io/en/studies/resource-rhythm/"><link rel="alternate" hreflang="x-default" href="https://yangzhiheng03-cloud.github.io/en/studies/resource-rhythm/">
+<meta property="og:title" content="《皇室战争》与《云顶之弈》：圣水与金币 | Klein Yang"><meta property="og:description" content="对比即时战术与长期运营，分析资源如何塑造决策，再讨论自走棋怎样减轻学习和操作负担。"><meta property="og:type" content="website"><meta property="og:image" content="https://yangzhiheng03-cloud.github.io/assets/studies/tft-bench.webp"><meta property="og:url" content="https://yangzhiheng03-cloud.github.io/studies/resource-rhythm/">
 <link rel="stylesheet" href="/assets/style.css"><script src="/assets/site.js" defer></script></head><body><a class="skip" href="#main">跳到正文</a>
 <header class="site-header"><div class="wrap header-inner">
 <a class="brand" href="/zh/"><span class="brand-mark" aria-hidden="true">KY</span>Klein Yang</a>
@@ -11,7 +11,66 @@
 <a href="/zh/#work">作品集</a><a href="/zh/#studies">游戏拆解</a><a href="/zh/#about">关于我</a></nav>
 <div class="tools"><nav class="languages" aria-label="选择语言"><a href="/studies/resource-rhythm/" lang="zh-CN" hreflang="zh-CN" aria-current="page" data-language>中</a><a href="/en/studies/resource-rhythm/" lang="en" hreflang="en"  data-language>EN</a></nav>
 <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="切换深色模式" title="切换明暗主题">◐</button></div></div></header><main id="main" class="wrap"><a class="back-link" href="/zh/#studies">← 返回游戏拆解</a>
-<header class="study-hero"><div><p class="eyebrow">皇室战争 × 云顶之弈 / 系统设计</p><h1>《皇室战争》与《云顶之弈》：从圣水到金币的决策节奏</h1><ul class="work-tags"><li class="game-tag">皇室战争 / 云顶之弈</li><li>资源经济</li><li>策略决策</li><li>系统设计</li></ul><p class="lede">对比即时战术与长期运营，分析资源如何塑造决策，再讨论自走棋怎样减轻学习和操作负担。</p><div class="actions"><a class="button secondary" href="/assets/studies/resource-rhythm.pdf" download>下载原始 PDF ↓</a></div></div><img src="/assets/studies/tft-bench.webp" alt="云顶之弈官方画面：选秀阶段与左侧装备栏" loading="eager" decoding="async" width="1600" height="900" fetchpriority=high></header>
-<div class="article-grid"><nav class="article-toc" aria-label="文章目录"><a href="#comparison">01 / 同样是资源，时间结构不同</a><a href="#tactics">02 / 圣水把决策压缩在当下</a><a href="#planning">03 / 金币把决策展开为一条运营路线</a><a href="#forgiveness">04 / 减轻后悔成本，保留策略选择</a><a href="#readability">05 / 用角色定位与界面减少理解成本</a><a href="#transition-proposal">06 / 个人提案：动态过渡规划</a><a href="#replay-proposal">07 / 个人提案：重返战场</a><a href="#practice-proposal">08 / 个人提案：无成本实战演练</a><a href="#sources">来源与原文</a></nav><div class="article-content"><p class="study-intro">这篇文章由我的《自走棋玩法拆解》整理而来。先以《皇室战争》常规即时对战的圣水，对照《云顶之弈》的金币，讨论资源的时间结构；再从装备、血量与界面入手分析减负，最后提出三个个人设计设想。文中的历史机制与官方配图用于设计讨论，不作为当前版本攻略。</p><section class="article-section" id="comparison"><h2>01 / 同样是资源，时间结构不同</h2><p>圣水与金币都按规则产出，玩家无法无限制地把单位投入战场。两者也都要求在现在使用与保留资源之间取舍。但它们把这道选择题放在了不同的时间尺度上。</p><p><strong>圣水：连续积累，直接转化。</strong>储量上限限制一次投入的规模，卡牌把费用直接转化为单位或法术。积累速率随阶段与模式规则变化；本文讨论常规即时对战，不讨论皇室战争的回合制模式。基础规则参见 <a href="https://support.supercell.com/clash-royale/en/articles/elixir.html" target="_blank" rel="noopener noreferrer">Supercell 圣水说明</a>。</p><p><strong>金币：跨回合储存，多层转化。</strong>购买棋子、刷新商店凑升级、购买经验提升人口，都让金币间接影响战力。利息与连胜、连败等收益又把当前选择传递到未来回合，玩家能够改变后续的经济路径。</p></section><section class="article-section" id="tactics"><h2>02 / 圣水把决策压缩在当下</h2><p>敌人已经过桥，我现在应该用什么应对？是否值得多投入一张牌，换取反击机会？圣水的直接转化与即时战场，让「反应、费用计算、落点与时机」紧密耦合。</p><p>我把这种体验类比为紧凑的攻防对抗：读懂对手动作，再决定抓住破绽还是保留应对。储存的价值主要是保留下一次行动的选择，而不是通过存款本身不断扩大基础产出。</p><figure class="study-figure"><a href="/assets/studies/clash-royale.webp" target="_blank" rel="noopener" aria-label="查看大图：Supercell 官方游戏页的对战展示：单位进入战场后，攻防与反制立即发生。"><img src="/assets/studies/clash-royale.webp" alt="Supercell 官方游戏页的对战展示：单位进入战场后，攻防与反制立即发生。" loading="lazy" decoding="async" width="743" height="923" ></a><figcaption>Supercell 官方游戏页的对战展示：单位进入战场后，攻防与反制立即发生。 · <a class="text-link" href="https://supercell.com/en/games/clashroyale/" target="_blank" rel="noopener noreferrer">官方图片来源 <span aria-hidden="true">↗</span></a></figcaption></figure></section><section class="article-section" id="planning"><h2>03 / 金币把决策展开为一条运营路线</h2><p>在《云顶之弈》中，存利息、搜卡与升级带来的战力曲线和风险不同。立刻花钱可能保住血量或连胜，继续存钱则保留未来投入的能力。收益不是在点击的一刻就完全兑现。</p><p>强化选择、来牌、装备与对手阵容不断修正原定计划。原稿以 3-2、4-2 等节点举例，讨论阶段性投入带来的阵容质变；它们是运营节拍的观察例子，而非每个版本、每套阵容都适用的固定答案。</p><p>因此，金币机制的核心能力更偏向预测与规划：我能承受多久的短期损失，什么信息值得让我提前投入，又需要为后续转型留下什么？</p></section><section class="article-section" id="forgiveness"><h2>04 / 减轻后悔成本，保留策略选择</h2><p>新赛季会更新棋子与机制，玩家需要重新建立理解。原稿把「稳定获得拆卸器」作为减负案例：当装备转移更可预期，玩家不必总在现在合成与害怕以后换装之间犹豫，也更容易保留承担过渡任务的棋子。具体掉落规则随版本变化，这里关注的是决策可修正性。</p><p>对战败扣血的观察则关注试错时间：如果前期失利带来的压力降低，玩家可能有更多回合尝试把阵容构筑成型。代价是保血与贪经济之间的平衡也会改变，因此「减负」需要与节奏和风险回报一起评价，不能只看单次惩罚更轻。</p></section><section class="article-section" id="readability"><h2>05 / 用角色定位与界面减少理解成本</h2><p><strong>角色定位与回蓝：</strong>让回蓝方式与坦克、施法者等职责联系起来，能够帮助玩家理解一枚新棋子为什么适合某种站位与装备。Riot 在 2025 年的角色定位更新中明确说明了按定位区分资源获取的思路。我的关注点是这种一致性如何降低重复学习的成本。</p><p><strong>装备栏整理：</strong>准备回合同时包含搜卡、买牌、站位和合成。把装备放进固定工具栏，并允许先在栏内合成，再装备给棋子，能减少寻找与精确拖放的负担。这里保留的是「该合成什么」的策略判断，减少的是找到物件和完成操作的摩擦。</p><figure class="study-figure"><a href="/assets/studies/tft-roles.webp" target="_blank" rel="noopener" aria-label="查看大图：Riot Games，2025 年角色定位更新：角色职责、回蓝说明与推荐装备被放在同一信息面板。"><img src="/assets/studies/tft-roles.webp" alt="Riot Games，2025 年角色定位更新：角色职责、回蓝说明与推荐装备被放在同一信息面板。" loading="lazy" decoding="async" width="1293" height="727" ></a><figcaption>Riot Games，2025 年角色定位更新：角色职责、回蓝说明与推荐装备被放在同一信息面板。 · <a class="text-link" href="https://teamfighttactics.leagueoflegends.com/en-sg/news/game-updates/roles-revamped-and-item-changes/" target="_blank" rel="noopener noreferrer">官方图片来源 <span aria-hidden="true">↗</span></a></figcaption></figure><figure class="study-figure"><a href="/assets/studies/tft-bench.webp" target="_blank" rel="noopener" aria-label="查看大图：Riot Games，2024 年装备栏更新：左侧工具栏让选秀期间也能查看持有的装备。"><img src="/assets/studies/tft-bench.webp" alt="Riot Games，2024 年装备栏更新：左侧工具栏让选秀期间也能查看持有的装备。" loading="lazy" decoding="async" width="1600" height="900" ></a><figcaption>Riot Games，2024 年装备栏更新：左侧工具栏让选秀期间也能查看持有的装备。 · <a class="text-link" href="https://teamfighttactics.leagueoflegends.com/en-gb/news/dev/dev-quality-of-life-improvements/" target="_blank" rel="noopener noreferrer">官方图片来源 <span aria-hidden="true">↗</span></a></figcaption></figure></section><section class="article-section" id="transition-proposal"><h2>06 / 个人提案：动态过渡规划</h2><p><strong>问题：</strong>玩家前期有什么用什么，后期却可能发现当前棋子与目标阵容之间缺少过渡。高费棋子到手时，关键低费搭配又不容易找到，限时变阵的压力很大。</p><p><strong>设想：</strong>根据现有棋子给出可平稳过渡的后期方向，以及需要保留的棋子和站位建议。目的在于提前看见选择，减轻临时变阵负担。这是个人功能提案；图中现有游戏界面不代表此功能已实现。</p></section><section class="article-section" id="replay-proposal"><h2>07 / 个人提案：重返战场</h2><p><strong>问题：</strong>对局结束后，玩家常能想到另一种站位或出装，却缺少验证「当时这样做会怎样」的环境。只看结果，很难区分判断问题与执行问题。</p><p><strong>设想：</strong>记录对手行为与随机事件，让玩家在赛后返回某个棋盘状态，调整自己的策略并重新观察战斗。目的在于让复盘包含验证，而不只依靠回忆。这仍是设计设想；可比实验需要控制随机性，不能把一次重跑直接当成决策优劣的证明。</p></section><section class="article-section" id="practice-proposal"><h2>08 / 个人提案：无成本实战演练</h2><p><strong>问题：</strong>在新赛季的正式对局里学习棋子、羁绊与站位，会同时承担排名、血量和时间压力。玩家想验证一个组合，未必能在有限来牌中凑齐。</p><p><strong>设想：</strong>提供可自由设置棋子、星级、装备与对手阵容的练习环境，让玩家反复比较组合与站位克制。目标是把认识新内容的基础试错移到低压力环境，把正式对局留给信息不完整时的取舍。</p><p>这三项提案共同指向一个原则：<strong>减少操作和学习中的无效阻力，让玩家把注意力投入有意义的资源取舍。</strong>它们尚未制作或进行玩家验证，实际效果仍需要原型与测试检验。</p></section>
-<section class="credits" id="sources"><h2>来源与原文</h2><p>正文整理自杨郅恒《自走棋玩法拆解》，共 3 页；网页标题调整为「《皇室战争》与《云顶之弈》：从圣水到金币的决策节奏」。皇室战争配图来自 Supercell 官方游戏页；云顶之弈配图来自 Riot Games 的 2024 年装备栏更新与 2025 年角色定位更新文章。图片在相关章节注明链接，版权归各原权利人。页面补充的官方资料仅用于核对规则与配图，设计判断及提案仍为个人分析。</p><p>网页内容提供中英文版本；原始文档和图中中文标注保留。点击正文图片可查看大图。</p><a class="text-link" href="/assets/studies/resource-rhythm.pdf" target="_blank" rel="noopener">阅读完整原始 PDF ↗</a></section>
-<aside class="related"><h3>继续阅读</h3><p>从关卡教学到探索节奏，再到资源决策。</p><a class="text-link" href="/zh/#studies">查看全部拆解 →</a></aside></div></div></main><footer class="site-footer"><div class="wrap footer-inner"><span>© 2026 Klein Yang</span><span>关卡设计 / 游戏机制 / 设计研究</span><a href="/en/studies/resource-rhythm/" data-language>Read in English</a></div></footer></body></html>
+<header class="study-hero"><div><p class="eyebrow">皇室战争 × 云顶之弈 / 系统设计</p><p class="study-label">原稿导出 · <time datetime="2026-03">2026 年 3 月</time></p><h1>自走棋核心资源玩法机制深度拆解</h1><ul class="work-tags"><li class="game-tag">皇室战争 / 云顶之弈</li><li>资源经济</li><li>策略决策</li><li>系统设计</li></ul><p class="lede">对比即时战术与长期运营，分析资源如何塑造决策，再讨论自走棋怎样减轻学习和操作负担。</p><div class="actions"><a class="button secondary" href="/assets/studies/resource-rhythm.pdf" download>下载原始 PDF ↓</a></div></div><img src="/assets/studies/tft-bench.webp" alt="云顶之弈官方画面：选秀阶段与左侧装备栏" loading="eager" decoding="async" width="1600" height="900" fetchpriority=high></header>
+<div class="article-grid"><nav class="article-toc" aria-label="文章目录"><a href="#section-1">一、核心资源机制对比：圣水与金币</a>
+<a href="#section-2">二、机制如何塑造核心玩法体验</a>
+<a href="#section-3">三、自走棋品类的“减负”设计趋势</a></nav><div class="article-content">
+<p>我选《皇室战争》的圣水和《云顶之弈》的金币作对比。两种资源都会随游戏进程补充，玩家却在做很不一样的判断：一边要想「这波进攻我现在怎么接」，另一边要想「这一回合花钱，会不会影响后面几回合成型」。从资源怎么变成战力出发，再看自走棋可以在哪些地方给玩家减负。</p>
+<section class="article-section" id="section-1">
+<h2 id="comparison">一、核心资源机制对比：圣水与金币</h2>
+<h3>相同点</h3>
+<p>两种资源都有规律地补充，也都限制着玩家这一刻能做多少事。手里有想用的牌，不代表现在就支付得起。</p>
+<p>玩家一直在即时消耗和留给之后之间做选择。现在把资源花完，眼前能多做一件事，下一次需要应对变化时，手里的余量就少了。</p>
+<h3>不同点</h3>
+<h4>圣水机制：连续、由系统决定的回复</h4>
+<p>圣水有上限，攒满以后继续等也不会再多。这限制了一次能打出多大规模的进攻，也让长时间按兵不动产生代价。</p>
+<p>圣水到战力的路径很短。打出单位，单位上场；打出法术，效果随即作用于战场。玩家能很快看到这笔费用换来了什么。</p>
+<p>同一阶段的回复速度由系统决定，进入不同阶段，回复速度会变。玩家需要估算的是：现在用掉这些圣水，下一波攻防发生前还能回多少？</p>
+<p>这种机制下，玩家要在很短的时间内判断对手出了什么牌、自己该用什么接。双方你攻我防、抓对手费用不足的空当，体验上很像格斗游戏里的攻防交换。</p>
+<h4>金币机制：按回合结算、收益可变</h4>
+<p>金币没有圣水那样的储存上限，可以跨回合大量积累。玩家既可以把手里的钱换成当下的战力，也可以先留着吃利息，改变后续的资金积累速度。</p>
+<p>金币与战力之间隔着几层选择。不同费用的棋子需要花钱购买；对子能否升星，取决于能否刷到需要的牌；想让更多棋子同时上场，又需要花钱提升等级。同样一笔金币，用于买牌、刷新牌库还是升级人口，成型的时间和结果都不同。</p>
+</section>
+<section class="article-section" id="section-2">
+<h2>二、机制如何塑造核心玩法体验</h2>
+<h3 id="tactics">1. 圣水机制：创造“实时战术博弈”体验</h3>
+<p>节奏快速。对手已经把单位放上场，留给我的问题是这波怎么接、什么时候出手、出哪一组单位最划算。即使牌选对了，时机晚了，战场也已经变了。</p>
+<p>体验核心在于应对与反制。费用计算最终落实在这一轮攻防上：能不能用较少的圣水守住，再用剩下的费用组织反击。</p>
+<h3 id="planning">2. 金币机制：创造“长期资源运营”体验</h3>
+<p>收益多元。存钱吃利息、D 牌搜卡、升级人口，对战力生效的时间不同，承担的风险也不同。多存一轮钱，后面能多搜几次；眼前的阵容撑不住，就要先承担掉血的代价。</p>
+<p>体验核心在于预测与规划。玩家把海克斯强化、自然来牌和对手阵容放在一起判断，选择走连胜，还是接受连败攒经济。到了 3-2、4-2 这类关键回合，再决定要不要集中花钱，把前面攒下的经济换成阵容强度。</p>
+</section>
+<section class="article-section" id="section-3">
+<h2>三、自走棋品类的“减负”设计趋势</h2>
+<p>在我观察的赛季周期里，《云顶之弈》大约每四个月更换一次赛季。每次换季时，玩家要重新认识棋子、阵容和机制。对熟悉旧赛季的玩家来说，最费力的一段往往是刚开始：我知道要做决定，却还不知道新赛季里这个决定会带来什么结果。下面四种设计，分别减轻了装备分配、血量运营、棋子理解和回合内操作的负担。</p>
+<h3 id="forgiveness">1. 装备拆卸器固定掉落</h3>
+<p>在我拆解的版本里，各阶段的野怪环节会固定掉落装备拆卸器。过去把装备给一个过渡棋子时，还要多想一步：后面想保留这个棋子，又想把装备给别人，能不能拿到拆卸器？如果只能等随机掉落，把装备先做出来就有了额外风险。</p>
+<p>当拆卸器成为可以预期的资源，玩家就能先用装备解决眼前的问题，之后再调整归属。装备仍要选、时机仍要判断，但不必为了等一次随机掉落，把已经能用的散件一直放着。</p>
+<h3>2. 改变战败扣血机制</h3>
+<p>前期战败的血量压力降低，场上存活棋子的数量也会影响损失。即使这轮打不过对手，尽量多换掉一两个单位仍有价值。对运营阵容的玩家来说，这给第四、第五阶段留出了更多调整空间，前期尚未成型的阵容也有机会走到自己的强势期。更多阵容能进入后期，也给不同成型速度的阵容留下了平衡空间。</p>
+<h3 id="readability">3. 棋子蓝量机制重做</h3>
+<p>按棋子定位区分回蓝方式，玩家可以从「它靠什么释放技能」理解它要站在哪里、该给什么装备。刚接触新棋子时，定位提供了一个判断依据，不必把每个棋子都当成一套全新的规则来记。</p>
+<h3>4. 装备格子归纳系统</h3>
+<p>早期散件铺在地上，准备回合里还要同时刷牌、买牌、调站位、合装备。想做什么装备已经想好了，时间却花在找散件上，匆忙中还可能合错。</p>
+<p>把散件收进固定的格子后，玩家可以提前看清位置，在格子里合好成装，再给到棋子。减掉的是找物品和拖动物品的操作，腾出的时间可以用来判断装备该给谁。</p>
+<h3>后续可减负优化点</h3>
+<h4 id="transition-proposal">1. 动态阵容规划助手</h4>
+<p>根据玩家当前场上已有的棋子，显示可以平稳过渡到的后期阵容，并给出对应的棋子和站位建议。</p>
+<details><summary>设计目的与设计理由</summary>
+<p>设计目的：让玩家有更多可选的过渡方式，减轻后期一边刷牌、一边重组阵容的压力。</p>
+<p>设计理由：前期通常是有什么用什么，先把能凑成的对子放上场。到了后期，理想棋子一直刷不出，临时换阵又需要原先错过的低费牌。等高费核心来了，配套的低费牌反而难找，阵容就卡在中间。助手可以从已经上场的棋子出发，让玩家提前看到几种后期走向，在还能留牌的时候就开始做选择。</p>
+</details>
+<h4 id="replay-proposal">2. 重返战场模式</h4>
+<p>记录一局中对手的行为和已经发生的随机事件。对局结束后，玩家可以回到当时的棋盘，重新安排自己的行动。</p>
+<details><summary>设计目的与设计理由</summary>
+<p>设计目的：让玩家可以亲手验证复盘中的判断。</p>
+<p>设计理由：输掉一轮后，我可能觉得最后一刻只要换个站位就能赢。下一局的对手、来牌和场面都变了，很难再验证这个想法。重返当时的战场，保留同一组条件，只改动自己想检查的操作，就能看到这个决定究竟改变了什么。</p>
+</details>
+<h4 id="practice-proposal">3. 实战演练模式</h4>
+<p>提供一个可以自由取用棋子的棋盘，允许调整星级和装备，也可以预设敌方阵容再开战。</p>
+<details><summary>设计目的与设计理由</summary>
+<p>设计目的：给玩家一个零成本的实验环境，可以反复尝试新赛季的棋子搭配，也能自己设置对手，验证阵容强度和站位克制。</p>
+<p>设计理由：在真实对局里试一种组合，要先等牌、攒钱、合装备，还要承受失败掉血的压力。新赛季最想弄清楚「这两个棋子放在一起会怎样」的时候，往往也是最难凑齐条件的时候。演练模式把实验条件交给玩家，让人先熟悉棋子和机制，再带着自己的判断进入下一局。</p>
+</details>
+</section>
+<div id="sources"><p><a class="text-link" href="/assets/studies/resource-rhythm.pdf">查看中文原稿 PDF ↗</a></p><p><a class="text-link" href="https://teamfighttactics.leagueoflegends.com/en-gb/news/dev/dev-quality-of-life-improvements/">封面图片来自 Riot Games ↗</a></p></div><aside class="related"><h3>继续阅读</h3><p>从关卡教学到探索节奏，再到资源决策。</p><a class="text-link" href="/zh/#studies">查看全部拆解 →</a></aside></div></div></main><footer class="site-footer"><div class="wrap footer-inner"><span>© 2026 Klein Yang</span><span>关卡设计 / 游戏机制 / 设计研究</span><a href="/en/studies/resource-rhythm/" data-language>Read in English</a></div></footer></body></html>
