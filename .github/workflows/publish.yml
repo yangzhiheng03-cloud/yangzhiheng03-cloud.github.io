@@ -1,5 +1,6 @@
 name: Publish portfolio
-on: [push, workflow_dispatch]
+# GitHub Pages already publishes pushes to the configured branch.
+on: workflow_dispatch
 permissions:
   contents: read
   pages: write
