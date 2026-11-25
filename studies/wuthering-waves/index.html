@@ -1,21 +1,6 @@
-<!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>《鸣潮》3.0 拉海洛浮光林关卡分析 | Klein Yang</title><meta name="description" content="以赫尔琉斯、青实原与引日殿为线索，拆解地标、视线、移动方式和分支路线如何组织自由探索。">
-<meta name="theme-color" content="#131613"><link rel="canonical" href="https://yangzhiheng03-cloud.github.io/studies/wuthering-waves/">
-<link rel="alternate" hreflang="zh-CN" href="https://yangzhiheng03-cloud.github.io/studies/wuthering-waves/"><link rel="alternate" hreflang="en" href="https://yangzhiheng03-cloud.github.io/en/studies/wuthering-waves/"><link rel="alternate" hreflang="x-default" href="https://yangzhiheng03-cloud.github.io/en/studies/wuthering-waves/">
-<meta property="og:title" content="《鸣潮》3.0 拉海洛浮光林关卡分析 | Klein Yang"><meta property="og:description" content="以赫尔琉斯、青实原与引日殿为线索，拆解地标、视线、移动方式和分支路线如何组织自由探索。"><meta property="og:type" content="website"><meta property="og:image" content="https://yangzhiheng03-cloud.github.io/assets/studies/wuthering-waves-p05-2.webp"><meta property="og:url" content="https://yangzhiheng03-cloud.github.io/studies/wuthering-waves/">
-<link rel="stylesheet" href="/assets/style.css"><script src="/assets/site.js" defer></script></head><body><a class="skip" href="#main">跳到正文</a>
-<header class="site-header"><div class="wrap header-inner">
-<a class="brand" href="/zh/"><span class="brand-mark" aria-hidden="true">KY</span>Klein Yang</a>
-<nav class="primary" aria-label="主导航">
-<a href="/zh/#work">作品集</a><a href="/zh/#studies">游戏拆解</a><a href="/zh/#about">关于我</a></nav>
-<div class="tools"><nav class="languages" aria-label="选择语言"><a href="/studies/wuthering-waves/" lang="zh-CN" hreflang="zh-CN" aria-current="page" data-language>中</a><a href="/en/studies/wuthering-waves/" lang="en" hreflang="en"  data-language>EN</a></nav>
-<button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="切换深色模式" title="切换明暗主题">◐</button></div></div></header><main id="main" class="wrap"><a class="back-link" href="/zh/#studies">← 返回游戏拆解</a>
-<header class="study-hero"><div><p class="eyebrow">3.0 拉海洛 / 开放世界 / 路线分析</p><p class="study-label">拆解时间 · <time datetime="2026-01">2026 年 1 月</time></p><h1>《鸣潮》3.0 拉海洛浮光林关卡分析</h1><ul class="work-tags"><li class="game-tag">鸣潮</li><li>开放世界</li><li>路线设计</li><li>探索节奏</li></ul><p class="lede">以赫尔琉斯、青实原与引日殿为线索，拆解地标、视线、移动方式和分支路线如何组织自由探索。</p><div class="actions"><a class="button secondary" href="/assets/studies/wuthering-waves.pdf" download>下载原始 PDF ↓</a></div></div><img src="/assets/studies/wuthering-waves-p05-2.webp" alt="鸣潮浮光林中的引日殿与巨大向日葵" loading="eager" decoding="async" width="1267" height="708" fetchpriority=high></header>
-<div class="article-grid"><nav class="article-toc" aria-label="文章目录"><a href="#section-1">一、游戏循环分析</a>
-<a href="#section-2">二、关卡进程分析</a>
-<a href="#section-3">三、关卡指引分析</a>
-<a href="#section-4">四、关卡总结</a></nav><div class="article-content">
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>鸣潮 3.0 · 拉海洛浮光林 | Klein Yang</title><link rel="stylesheet" href="/assets/palette.css"><link rel="stylesheet" href="/assets/portfolio.css"><script defer src="/assets/portfolio.js"></script><meta name="description" content="以赫尔琉斯、青实原与引日殿为线索，拆解地标、视线、移动方式和分支路线如何组织自由探索。"><meta name="theme-color" content="#1c1c22"><link rel="canonical" href="https://yangzhiheng03-cloud.github.io/studies/wuthering-waves/"><link rel="alternate" hreflang="en" href="https://yangzhiheng03-cloud.github.io/en/studies/wuthering-waves/"><link rel="alternate" hreflang="zh-CN" href="https://yangzhiheng03-cloud.github.io/studies/wuthering-waves/"><link rel="alternate" hreflang="x-default" href="https://yangzhiheng03-cloud.github.io/en/studies/wuthering-waves/"><meta property="og:title" content="鸣潮 3.0 · 拉海洛浮光林 | Klein Yang"><meta property="og:description" content="以赫尔琉斯、青实原与引日殿为线索，拆解地标、视线、移动方式和分支路线如何组织自由探索。"><meta property="og:type" content="website"><meta property="og:image" content="https://yangzhiheng03-cloud.github.io/assets/studies/wuthering-waves-p05-2.webp"><meta property="og:url" content="https://yangzhiheng03-cloud.github.io/studies/wuthering-waves/"></head><body>
+<a class="skip" href="#main">跳到正文</a><header class="bar"><div class="shell bar-inner"><a class="brand" href="/zh/"><span class="monogram" aria-hidden="true">KY</span><span><b>杨郅恒</b><small>游戏设计学生</small></span></a><nav aria-label="网站导航"><a href="/zh/#work" >作品</a><a href="/zh/#studies" aria-current=location>游戏拆解</a><a href="/zh/#about" >关于我</a></nav><div class="settings"><div class="langs" aria-label="语言"><a href="/en/studies/wuthering-waves/" hreflang="en" data-language >EN</a><a href="/studies/wuthering-waves/" hreflang="zh-CN" data-language aria-current=page>ZH</a></div><button type="button" class="theme" data-theme-toggle aria-label="切换深色模式" title="切换深色模式" aria-pressed="false">◐</button></div></div></header>
+<main class="shell" id="main"><a class="back" href="/zh/#studies">← 游戏拆解</a><header class="study-head"><div class="study-title"><p class="kicker">游戏拆解 <i>/</i> <time datetime="2026-01">2026.01</time></p><h1>鸣潮 3.0<span>拉海洛浮光林关卡分析</span></h1><div class="tagline">开放世界 · 路线设计 · 探索节奏</div><a class="line-link" href="/assets/studies/wuthering-waves.pdf" download>下载中文原稿 PDF ↓</a></div><figure><a class="zoom" href="/assets/studies/wuthering-waves-p05-2.webp"><img src="/assets/studies/wuthering-waves-p05-2.webp" width="1267" height="708" alt="青实原上望向引日殿" decoding="async" fetchpriority="high"></a><figcaption>青实原上望向引日殿</figcaption></figure></header><div class="doc-layout waves"><aside class="side"><details class="contents"><summary>文章目录</summary><nav aria-label="文章目录"><a href="#section-1">一、游戏循环分析</a><a href="#section-2">二、关卡进程分析</a><a href="#section-3">三、关卡指引分析</a><a href="#section-4">四、关卡总结</a><div class="route-shortcuts"><small>路线细读</small><a href="#node-1-2"><i>1.2</i>入口构图</a><a href="#node-1-12"><i>1.12</i>信标分路</a><a href="#node-1-19"><i>1.19</i>回到收集物</a></div></nav></details></aside><article class="prose">
 <p>简介：《鸣潮》的地图既要让玩家自由选择探索方向，又要让走上不同路线的玩家都有事情可做。我想从浮光林看两个问题：玩家走完眼前这个挑战，是怎样发现下一个目标的？喜欢直奔终点和喜欢沿途全收集的玩家，走进同一张地图，会得到怎样的体验？</p>
 <section class="article-section" id="section-1">
 <h2 id="overview">一、游戏循环分析</h2>
@@ -58,29 +43,29 @@
 <p>构图、指引物。走近一个节奏点时，我先看画面中最容易被注意到的物件，再看完成眼前的事以后，下一个目标出现在什么方向。浮光林反复用到了这层关系：玩家往一个地标靠近，途中又被更近的事物引到下一段路上。</p>
 <h4>赫尔琉斯指引分析</h4>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-08-1.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-08-1.webp" alt="原稿第 8 页，图 1" loading="lazy" decoding="async" width="1163" height="958"></a></figure>
-<p id="arrival">1.1　在前往浮光林的路上，巨大的石环从周围环境中突出来。它的形状很像入口，中间却只看得见隐约的透明特效。玩家能认出这里可以进去，还看不清进去后会发生什么。</p>
+<p id="arrival"><span class="node" id="node-1-1">1.1</span> 在前往浮光林的路上，巨大的石环从周围环境中突出来。它的形状很像入口，中间却只看得见隐约的透明特效。玩家能认出这里可以进去，还看不清进去后会发生什么。</p>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-09-1.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-09-1.webp" alt="原稿第 9 页，图 1" loading="lazy" decoding="async" width="1163" height="650"></a></figure>
-<p>1.2　站在赫尔琉斯入口前，可以把这张画面分成三层。</p>
+<p><span class="node" id="node-1-2">1.2</span> 站在赫尔琉斯入口前，可以把这张画面分成三层。</p>
 <p>近景：层层升高的台阶给出前进方向，台阶尽头的开口留出负空间，让人想知道后面还有什么。</p>
 <p>中景：紫色植物和岩石建立当前区域的氛围，摩托交互物提示接下来会用到的移动方式。</p>
 <p>远景：巨大的石环框住后面的空间，告诉玩家眼前这段台阶只是入口。</p>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-09-2.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-09-2.webp" alt="原稿第 9 页，图 2" loading="lazy" decoding="async" width="1163" height="646"></a></figure>
 <details><summary>1.3–1.8　从入口营帐，经花海到石环</summary>
-<p>1.3　穿过石头搭建的入口，道路尽头的 NPC 和带花纹的石柱把玩家引过去。对话结束后，镜头向两侧移动，近处是营帐，远一些是召唤摩托的光门。距离在这里排出了一个顺手的探索次序：先看营帐，再去光门。</p>
+<p><span class="node" id="node-1-3">1.3</span> 穿过石头搭建的入口，道路尽头的 NPC 和带花纹的石柱把玩家引过去。对话结束后，镜头向两侧移动，近处是营帐，远一些是召唤摩托的光门。距离在这里排出了一个顺手的探索次序：先看营帐，再去光门。</p>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-10-1.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-10-1.webp" alt="原稿第 10 页，图 1" loading="lazy" decoding="async" width="1163" height="649"></a></figure>
-<p>1.4　骑摩托穿过光门，沿线的宝箱可以在一段连续的移动里收完。接连拿到奖励，让玩家的情绪第一次被推高。</p>
+<p><span class="node" id="node-1-4">1.4</span> 骑摩托穿过光门，沿线的宝箱可以在一段连续的移动里收完。接连拿到奖励，让玩家的情绪第一次被推高。</p>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-10-2.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-10-2.webp" alt="原稿第 10 页，图 2" loading="lazy" decoding="async" width="1163" height="651"></a></figure>
-<p id="vista">1.5　落地后，前方是一整片花海。刚才需要盯着路线和宝箱，现在可以把目光放远，自己往花海里走。这里是进入赫尔琉斯后的第一个观景高点。</p>
+<p id="vista"><span class="node" id="node-1-5">1.5</span> 落地后，前方是一整片花海。刚才需要盯着路线和宝箱，现在可以把目光放远，自己往花海里走。这里是进入赫尔琉斯后的第一个观景高点。</p>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-11-1.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-11-1.webp" alt="原稿第 11 页，图 1" loading="lazy" decoding="async" width="1161" height="654"></a></figure>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-11-2.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-11-2.webp" alt="原稿第 11 页，图 2" loading="lazy" decoding="async" width="1163" height="650"></a></figure>
-<p>1.6　从花海调转镜头，前方有两条路。一条直接通往石环背后，目的地还看不清；另一条走向赫尔琉斯中心，路上有 NPC，尽头有建筑。大信标尚未点亮，喜欢全收集的玩家可以先去看得见的营地，想尽快知道石环后面有什么的玩家可以直接过去。两条路最后通往同一区域。</p>
+<p><span class="node" id="node-1-6">1.6</span> 从花海调转镜头，前方有两条路。一条直接通往石环背后，目的地还看不清；另一条走向赫尔琉斯中心，路上有 NPC，尽头有建筑。大信标尚未点亮，喜欢全收集的玩家可以先去看得见的营地，想尽快知道石环后面有什么的玩家可以直接过去。两条路最后通往同一区域。</p>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-12-1.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-12-1.webp" alt="原稿第 12 页，图 1" loading="lazy" decoding="async" width="1163" height="650"></a></figure>
-<p>1.7　花海之后，路面上只放了少量可顺手拾取的材料。玩家不用为新的密集挑战停下来，情绪在这里回落，给接下来的场景揭示留出空间。</p>
+<p><span class="node" id="node-1-7">1.7</span> 花海之后，路面上只放了少量可顺手拾取的材料。玩家不用为新的密集挑战停下来，情绪在这里回落，给接下来的场景揭示留出空间。</p>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-12-2.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-12-2.webp" alt="原稿第 12 页，图 2" loading="lazy" decoding="async" width="1163" height="647"></a></figure>
-<p>1.8　石环占据了大半个画面，中央的通道通向一片空白。负空间暂时遮住了目的地，玩家开始期待穿过去之后会看见什么。</p>
+<p><span class="node" id="node-1-8">1.8</span> 石环占据了大半个画面，中央的通道通向一片空白。负空间暂时遮住了目的地，玩家开始期待穿过去之后会看见什么。</p>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-13-1.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-13-1.webp" alt="原稿第 13 页，图 1" loading="lazy" decoding="async" width="1163" height="650"></a></figure>
 </details>
-<p id="reveal">1.9　进入通道后，新区域的建筑才逐渐进入视线，原先的空白被带有科技感的部落景观填满。前方制高点把这次揭示推到高点。骑摩托经过这里时，车速也被压低了。我把这个安排理解为同时给场景加载和玩家观看留出时间。</p>
+<p id="reveal"><span class="node" id="node-1-9">1.9</span> 进入通道后，新区域的建筑才逐渐进入视线，原先的空白被带有科技感的部落景观填满。前方制高点把这次揭示推到高点。骑摩托经过这里时，车速也被压低了。我把这个安排理解为同时给场景加载和玩家观看留出时间。</p>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-13-2.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-13-2.webp" alt="原稿第 13 页，图 2" loading="lazy" decoding="async" width="1164" height="650"></a></figure>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-14-1.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-14-1.webp" alt="原稿第 14 页，图 1" loading="lazy" decoding="async" width="1163" height="650"></a></figure>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-14-2.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-14-2.webp" alt="原稿第 14 页，图 2" loading="lazy" decoding="async" width="1164" height="650"></a></figure>
@@ -91,12 +76,12 @@
 <h4>青实原与引日殿指引分析</h4>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-15-2.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-15-2.webp" alt="原稿第 15 页，图 2" loading="lazy" decoding="async" width="1163" height="807"></a></figure>
 <details><summary>1.10–1.11　从引日殿远景到大信标</summary>
-<p>1.10　把视线从引日殿移回眼前，道路平直，途中没有需要停车的障碍，沿路的钩锁也在提示移动方向。玩家自然会召唤摩托往前走。随着场景音效变化，刚才看见全景时的兴奋慢慢平复，注意力回到即将展开的探索。</p>
+<p><span class="node" id="node-1-10">1.10</span> 把视线从引日殿移回眼前，道路平直，途中没有需要停车的障碍，沿路的钩锁也在提示移动方向。玩家自然会召唤摩托往前走。随着场景音效变化，刚才看见全景时的兴奋慢慢平复，注意力回到即将展开的探索。</p>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-16-1.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-16-1.webp" alt="原稿第 16 页，图 1" loading="lazy" decoding="async" width="1164" height="650"></a></figure>
-<p>1.11　骑行一段时间后，玩家已经开始熟悉环境，但对整个区域还没有把握。这时大信标出现在道路尽头。点亮信标就能看清区域地图，玩家也从「这是什么地方」转向「接下来我想去哪里」。</p>
+<p><span class="node" id="node-1-11">1.11</span> 骑行一段时间后，玩家已经开始熟悉环境，但对整个区域还没有把握。这时大信标出现在道路尽头。点亮信标就能看清区域地图，玩家也从「这是什么地方」转向「接下来我想去哪里」。</p>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-16-2.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-16-2.webp" alt="原稿第 16 页，图 2" loading="lazy" decoding="async" width="1164" height="650"></a></figure>
 </details>
-<p id="choices">1.12　以大信标为中心，有三个出发方向。它们最后都能接回之前看见的引日殿。</p>
+<p id="choices"><span class="node" id="node-1-12">1.12</span> 以大信标为中心，有三个出发方向。它们最后都能接回之前看见的引日殿。</p>
 <p>一、开启支线任务「光的来处」，跟着任务前往头顶的浮空建筑。</p>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-17-1.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-17-1.webp" alt="原稿第 17 页，图 1" loading="lazy" decoding="async" width="1164" height="650"></a></figure>
 <p>二、前往青实归还之碑。这里是支线结束后会回到的地方，也可以用地图收集物兑换奖励，地图上有明确图标。</p>
@@ -105,33 +90,33 @@
 <figure class="study-figure"><a href="/assets/studies/figures/waves-18-1.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-18-1.webp" alt="原稿第 18 页，图 1" loading="lazy" decoding="async" width="1164" height="650"></a></figure>
 <p>第一条路做完支线也会回到第二条路的目标点。下面从归还之碑这条路继续走。</p>
 <details><summary>1.13–1.17　从高处收集物到暗色区域</summary>
-<p id="vertical">1.13　从牧者处出来，高点的收集物先吸引目光，附近的钩锁给出上去的方法。水池又压缩了骑摩托直穿的空间，让玩家转而跟着收集物登高。</p>
+<p id="vertical"><span class="node" id="node-1-13">1.13</span> 从牧者处出来，高点的收集物先吸引目光，附近的钩锁给出上去的方法。水池又压缩了骑摩托直穿的空间，让玩家转而跟着收集物登高。</p>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-18-2.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-18-2.webp" alt="原稿第 18 页，图 2" loading="lazy" decoding="async" width="1163" height="648"></a></figure>
-<p>1.14　站上高点，引日殿又回到视线中心。一近一远两个目标同时成立。</p>
+<p><span class="node" id="node-1-14">1.14</span> 站上高点，引日殿又回到视线中心。一近一远两个目标同时成立。</p>
 <p>近景：钩锁引向下一个终声残卷所在的位置。</p>
 <p>远景：引日殿提示这条路最终通向哪里。</p>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-19-1.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-19-1.webp" alt="原稿第 19 页，图 1" loading="lazy" decoding="async" width="1163" height="650"></a></figure>
-<p>1.15　在下一个终声残卷处，玩家会注意到紫色潮汐之遗。完成战斗挑战后，前方一头犀牛和一只麋鹿正在打架。它们的动作接过了刚才战斗留下的注意力，把人引向图中箭头所指的方向。</p>
+<p><span class="node" id="node-1-15">1.15</span> 在下一个终声残卷处，玩家会注意到紫色潮汐之遗。完成战斗挑战后，前方一头犀牛和一只麋鹿正在打架。它们的动作接过了刚才战斗留下的注意力，把人引向图中箭头所指的方向。</p>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-19-2.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-19-2.webp" alt="原稿第 19 页，图 2" loading="lazy" decoding="async" width="1163" height="659"></a></figure>
-<p>1.16　打完犀牛，眼前出现摩托翘板和一大片可以加速的草地。玩家可以收起战斗时的注意力，换回摩托，沿地势驶向下一个探索点。</p>
+<p><span class="node" id="node-1-16">1.16</span> 打完犀牛，眼前出现摩托翘板和一大片可以加速的草地。玩家可以收起战斗时的注意力，换回摩托，沿地势驶向下一个探索点。</p>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-20-1.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-20-1.webp" alt="原稿第 20 页，图 1" loading="lazy" decoding="async" width="1164" height="650"></a></figure>
-<p>1.17　借翘板飞过一段距离，落点已经是陌生的暗色区域。前一段明亮开阔，落地后的光线明显变暗，移动本身完成了一次场景转换。</p>
+<p><span class="node" id="node-1-17">1.17</span> 借翘板飞过一段距离，落点已经是陌生的暗色区域。前一段明亮开阔，落地后的光线明显变暗，移动本身完成了一次场景转换。</p>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-20-2.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-20-2.webp" alt="原稿第 20 页，图 2" loading="lazy" decoding="async" width="1164" height="650"></a></figure>
 </details>
-<p id="return">1.18　继续骑行，会经过一处祭台。抬头能看见空洞上方的终声残卷，但骑得快时很容易从它下面穿过去。「上面有东西，暂时没拿到」就成了一个可以在回程兑现的记忆点。</p>
+<p id="return"><span class="node" id="node-1-18">1.18</span> 继续骑行，会经过一处祭台。抬头能看见空洞上方的终声残卷，但骑得快时很容易从它下面穿过去。「上面有东西，暂时没拿到」就成了一个可以在回程兑现的记忆点。</p>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-21-1.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-21-1.webp" alt="原稿第 21 页，图 1" loading="lazy" decoding="async" width="1163" height="652"></a></figure>
-<p>1.19　再往前有一个需要战斗和显像解谜才能开启的宝箱，玩家有了下车的理由。打完后，沿终声残卷登上高点，从这个角度才看见通往先前空洞上方的钩锁。刚才没拿到的收集物，现在有了可执行的路线。</p>
+<p><span class="node" id="node-1-19">1.19</span> 再往前有一个需要战斗和显像解谜才能开启的宝箱，玩家有了下车的理由。打完后，沿终声残卷登上高点，从这个角度才看见通往先前空洞上方的钩锁。刚才没拿到的收集物，现在有了可执行的路线。</p>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-21-2.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-21-2.webp" alt="原稿第 21 页，图 2" loading="lazy" decoding="async" width="1163" height="656"></a></figure>
 <details><summary>1.20–1.21　从岔路挑战到殿前小信标</summary>
-<p>1.20　继续往前是岔路，左手边的金色潮汐之遗是这一段的最终挑战和奖励。引日殿正好落在挑战的背景里，让玩家意识到，走完这段路也就快到终点了。</p>
+<p><span class="node" id="node-1-20">1.20</span> 继续往前是岔路，左手边的金色潮汐之遗是这一段的最终挑战和奖励。引日殿正好落在挑战的背景里，让玩家意识到，走完这段路也就快到终点了。</p>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-22-1.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-22-1.webp" alt="原稿第 22 页，图 1" loading="lazy" decoding="async" width="1163" height="659"></a></figure>
-<p>1.21　完成挑战后，可以沿较轻松的水路绕到引日殿正前方，解锁小信标。这条路线在殿前收束。</p>
+<p><span class="node" id="node-1-21">1.21</span> 完成挑战后，可以沿较轻松的水路绕到引日殿正前方，解锁小信标。这条路线在殿前收束。</p>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-22-2.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-22-2.webp" alt="原稿第 22 页，图 2" loading="lazy" decoding="async" width="1164" height="650"></a></figure>
 </details>
-<p id="convergence">1.22　从大信标出发的第三条路，可以直接抵达另一处金色潮汐之遗。终点挑战与第二条路相当，接下来往引日殿走的方向也很清楚。</p>
+<p id="convergence"><span class="node" id="node-1-22">1.22</span> 从大信标出发的第三条路，可以直接抵达另一处金色潮汐之遗。终点挑战与第二条路相当，接下来往引日殿走的方向也很清楚。</p>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-23-1.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-23-1.webp" alt="原稿第 23 页，图 1" loading="lazy" decoding="async" width="1164" height="650"></a></figure>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-23-2.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-23-2.webp" alt="原稿第 23 页，图 2" loading="lazy" decoding="async" width="1163" height="650"></a></figure>
-<p>1.23　两条主路旁边还有大小不一的支路。玩家可以临时离开主路追一个目标，收完以后再找到回来的方向。</p>
+<p><span class="node" id="node-1-23">1.23</span> 两条主路旁边还有大小不一的支路。玩家可以临时离开主路追一个目标，收完以后再找到回来的方向。</p>
 <p>先看 1.19 那处空洞的上方。抵达后可以望见引日殿背面，提前看到后续空间。这里没有继续铺很多挑战，拿完收集物就有理由回到主路。</p>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-24-1.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-24-1.webp" alt="原稿第 24 页，图 1" loading="lazy" decoding="async" width="1164" height="650"></a></figure>
 <figure class="study-figure"><a href="/assets/studies/figures/waves-24-2.webp" target="_blank" rel="noopener"><img src="/assets/studies/figures/waves-24-2.webp" alt="原稿第 24 页，图 2" loading="lazy" decoding="async" width="780" height="1005"></a></figure>
@@ -153,4 +138,6 @@
 <p>史东薇尔城从正面走更短，但对操作的要求很高，初次进入的玩家很难直接通过。浮光林的短路线把玩家更快带到终点，末段挑战和长路线处在相近的难度上，玩家也可以先绕过挑战。这里选近路，主要改变探索的时长和内容。</p>
 <p>我认为，这和两款游戏给玩家建立的预期有关。在《鸣潮》的长线探索里，玩家习惯把看见的挑战和奖励当作自己可以逐步完成的目标。一个区域即使在地形上相对独立，也要接得上其他区域建立的难度预期。浮光林可以借鉴单机开放世界的路线变化和节奏起伏，同时把两条路的最终挑战控制在相近的水平上。</p>
 </section>
-<div id="sources"><p><a class="text-link" href="/assets/studies/wuthering-waves.pdf">查看中文原稿 PDF ↗</a></p></div><aside class="related"><h3>继续阅读</h3><p>从关卡教学到探索节奏，再到资源决策。</p><a class="text-link" href="/zh/#studies">查看全部拆解 →</a></aside></div></div></main><footer class="site-footer"><div class="wrap footer-inner"><span>© 2026 Klein Yang</span><span>关卡设计 / 游戏机制 / 设计研究</span><a href="/en/studies/wuthering-waves/" data-language>Read in English</a></div></footer></body></html>
+<p class="study-end"><a class="line-link" href="/archive/?category=2">← 全部游戏拆解</a></p></article></div></main>
+<footer><div class="shell foot"><a href="/zh/">© Klein Yang</a><span>游戏设计作品集</span><a href="#main">返回顶部 ↑</a></div></footer>
+<dialog class="lightbox" aria-label="大图查看"><div class="light-head"><span id="light-caption"></span><button type="button" data-close>关闭 ×</button></div><div class="light-stage"><img alt=""></div><div class="light-controls"><button type="button" data-light-prev aria-label="上一张图片">←</button><span data-light-index></span><button type="button" data-light-next aria-label="下一张图片">→</button><button type="button" data-zoom-toggle>原始大小</button></div></dialog></body></html>
