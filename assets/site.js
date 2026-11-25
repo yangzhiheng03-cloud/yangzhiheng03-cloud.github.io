@@ -49,15 +49,14 @@ if (cover) {
   link.append(picture);
   const project = document.querySelector('.project-feature .image-link');
   const slides = [[picture.src, picture.alt, ...Array.from(caption.children, el => el.textContent), project.href]];
-  document.querySelectorAll('.prototype-list article').forEach(card => {
+  const cards = [...document.querySelectorAll('.prototype-list article, .study-preview')];
+  const month = card => card.querySelector('time')?.dateTime || '';
+  cards.sort((a, b) => month(b).localeCompare(month(a)));
+  cards.forEach(card => {
     const image = card.querySelector('img');
-    slides.push([image.src, image.alt, card.querySelector('h3').textContent,
+    const title = card.querySelector('.game-tag') || card.querySelector('h3');
+    slides.push([image.src, image.alt, title.textContent,
       card.querySelector('.study-label').textContent, card.querySelector('a').href]);
-  });
-  document.querySelectorAll('.study-preview').forEach(card => {
-    const image = card.querySelector('img');
-    slides.push([image.src, image.alt, card.querySelector('.game-tag').textContent,
-      english ? 'Game analysis' : '游戏拆解', card.querySelector('a').href]);
   });
   let index = 0;
   function show() {
