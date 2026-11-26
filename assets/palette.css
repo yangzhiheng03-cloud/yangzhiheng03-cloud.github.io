@@ -1,25 +1,26 @@
 :root, :root[data-theme=light] {
   color-scheme: light;
-  --paper: #f6f5ef;
-  --surface: #fffef8;
-  --ink: #1b1b20;
-  --muted: #53525b;
-  --line: #c8c6bd;
-  --link-ink: #50471b;
-  --tint: #eceadd;
-  --cover: #1c1c22;
-  --signal: #f4ed16;
-  --cover-type: #f8f7f1;
+  --paper: #f2f5ef;
+  --surface: #fbfdf9;
+  --ink: #17221c;
+  --muted: #4e6056;
+  --line: #bfccc0;
+  --link-ink: #235b45;
+  --tint: #e0ebdf;
+  --cover: #101410;
+  --signal: #9bdfb8;
+  --signal-hover: #c5efd3;
+  --cover-type: #f1f5ee;
 }
 :root[data-theme=dark] {
   color-scheme: dark;
-  --paper: #19191e;
-  --surface: #222229;
-  --ink: #f5f4ed;
-  --muted: #c0bdc3;
-  --line: #48474e;
+  --paper: #151b17;
+  --surface: #1d2721;
+  --ink: #f0f5ed;
+  --muted: #b7c6bb;
+  --line: #435248;
   --link-ink: var(--signal);
-  --tint: #2a2a30;
+  --tint: #24332a;
 }
 .original-project:root,
 .original-project:root[data-theme] {
@@ -31,4 +32,5 @@
 }
 .original-project .brand-mark {background:var(--signal);color:var(--cover);border-radius:0}
 .original-project .student-label {display:block;font-size:11px;color:var(--muted);font-weight:500;line-height:1.2}
-::selection {color:#19191e;background:#f4ed16}
+.original-project .media-grid .sketch img {background:var(--tint)}
+::selection {color:var(--cover);background:var(--signal)}
