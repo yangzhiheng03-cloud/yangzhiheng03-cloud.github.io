@@ -10,12 +10,10 @@
 <nav class="primary" aria-label="Main navigation">
 <a href="/#work">Work</a><a href="/#studies">Game studies</a><a href="/#about">About</a></nav>
 <div class="tools"><nav class="languages" aria-label="Choose language"><a href="/projects/alive/" lang="zh-CN" hreflang="zh-CN"  data-language>中</a><a href="/en/projects/alive/" lang="en" hreflang="en" aria-current="page" data-language>EN</a></nav>
-<button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Toggle dark mode" title="Switch color theme">◐</button></div></div></header><main id="main" class="wrap folio"><a class="back-link" href="/#work">← Selected work</a><header class="folio-intro"><div>
-<h1>ALIVE!</h1><dl lang="en"><div><dt>ROLES</dt><dd>Gameplay / Level / Narrative Design</dd></div><div><dt>GENRE</dt><dd>Pre-programmed strategy puzzle</dd></div><div><dt>EVENT</dt><dd>2025 CIGA Game Jam</dd></div><div><dt>THEME</dt><dd>Alive</dd></div><div><dt>DURATION</dt><dd>48 hours</dd></div><div><dt>TEAM</dt><dd>5 people · 2 designers / 3 programmers</dd></div><div><dt>SCOPE</dt><dd>7 levels · Playable prototype</dd></div></dl><div class="actions">
+<button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Toggle dark mode" title="Switch color theme">◐</button></div></div></header><main id="main" class="wrap folio"><a class="back" href="/#team-projects">← Team Projects</a><header class="project-intro"><div class="project-name"><h1>ALIVE!</h1><time datetime="2025-07">2025.07</time></div><dl class="project-facts"><div><dt>Overview</dt><dd>Give instructions to everyday objects, then press play. Across seven puzzles, their movements and interactions help an autonomous character reach the exit.</dd></div><div><dt>Goals</dt><dd>Help players reason about timing. The early rooms isolate one interaction at a time, then later puzzles ask players to make the result of one action set up the next.</dd></div><div><dt>Engine</dt><dd>Unity</dd></div><div><dt>Genre</dt><dd>Turn-based programming puzzle</dd></div><div><dt>Project duration</dt><dd>48 hours</dd></div><div><dt>Team &amp; production</dt><dd>Five-person CiGA Game Jam team: two designers and three programmers. I designed gameplay, levels and narrative.</dd></div></dl><div class="project-actions">
 <a class="button" href="https://kleinzhy.itch.io/alive">Play on itch.io</a>
 
-</div></div>
-<img src="/assets/folios/alive-en-cover.webp" width="1816" height="946" alt="ALIVE!" loading="eager" decoding="async"></header>
+</div></header><figure class="project-opener-art"><img src="/assets/folios/alive-en-cover.webp" width="1816" height="946" alt="ALIVE! · game title screen" decoding="async" loading="lazy"><figcaption>ALIVE! · game title screen</figcaption></figure>
 <nav class="folio-nav" aria-label="Contents"><a href="#overview">INSPIRATION &amp; RESEARCH</a><a href="#mechanics">GAME MECHANICS &amp; PUZZLE DESIGN</a><a href="#process">MY CONTRIBUTION &amp; DEVELOPMENT PROCESS</a></nav>
 <div lang="en">
 <section class="folio-chapter" id="overview"><h2>INSPIRATION &amp; RESEARCH</h2>
@@ -25,25 +23,7 @@
 <p>I shifted control from the hero to the room’s objects and separated planning from execution. Players arrange the objects’ actions in advance, then watch their plan unfold as they help the character escape.</p></div>
 <div class="folio-panel"><h3>THEME DEVELOPMENT</h3>
 <figure><a href="/assets/folios/alive-en-2-122.webp" aria-label="THEME DEVELOPMENT · Full size"><img src="/assets/folios/alive-en-2-122.webp" width="2205" height="545" alt="THEME DEVELOPMENT" loading="lazy" decoding="async"></a>
-<details><summary>Figure text</summary><div class="figure-copy">
-<span>ALIVE</span>
-<span>Give objects the</span>
-<span>ability to act on their</span>
-<span>own.</span>
-<span>ROLES REVERSED</span>
-<span>Rethink who the player</span>
-<span>controls.</span>
-<span>CHOSEN APPROACH</span>
-<span>Plan object actions → Resolve each turn → Watch the plan unfold</span>
-<span>Static props → movement and interaction</span>
-<span>Control the hero → script the objects</span>
-<span>Objects change the room’s conditions</span>
-<span>Objects perform their own actions instead of waiting to be used,</span>
-<span>creating opportunities for them to affect one another.</span>
-<span>The hero becomes the one being helped</span>
-<span>Players create a route for the character by arranging objects.</span>
-<span>Solving the puzzle depends on how those objects interact.</span>
-</div></details>
+
 </figure></div>
 </div>
 <div class="folio-row">
@@ -79,133 +59,51 @@
 <p>Plan objects’ movement and interactions to help the character escape. You cannot script the character directly. Use objects to open routes, remove constraints or change when the character moves.</p>
 <h3>01 Script the objects</h3>
 <figure><a href="/assets/folios/alive-en-3-114.webp" aria-label="01 Script the objects · Full size"><img src="/assets/folios/alive-en-3-114.webp" width="945" height="203" alt="01 Script the objects" loading="lazy" decoding="async"></a>
-<details><summary>Figure text</summary><div class="figure-copy">
-<span>Left click to select. Use WASD to plan</span>
-<span>movement and F to interact or stop.</span>
-<span>Each move or interaction takes one</span>
-<span>turn.</span>
-</div></details>
+
 </figure>
 <h3>02 Let objects affect one another</h3>
 <figure><a href="/assets/folios/alive-en-3-116.webp" aria-label="02 Let objects affect one another · Full size"><img src="/assets/folios/alive-en-3-116.webp" width="945" height="141" alt="02 Let objects affect one another" loading="lazy" decoding="async"></a>
-<details><summary>Figure text</summary><div class="figure-copy">
-<span>Key opens door</span>
-<span>Scissors free key</span>
-<span>Bomb breaks wall</span>
-</div></details>
+
 </figure>
 <h3>03 Resolve actions turn by turn</h3>
 <p>Press ALIVE. Objects act in a fixed order, followed by the character. Each object checks its prerequisites before acting.</p>
 <figure><a href="/assets/folios/alive-en-3-119.webp" aria-label="03 Resolve actions turn by turn · Full size"><img src="/assets/folios/alive-en-3-119.webp" width="945" height="78" alt="03 Resolve actions turn by turn" loading="lazy" decoding="async"></a>
-<details><summary>Figure text</summary><div class="figure-copy">
-<span>Scissors cut rope</span>
-<span>Key can move</span>
-<span>Character acts</span>
-</div></details>
+
 </figure>
 <p>Within one turn, the scissors must free the key before the key can move.</p>
 <h3>CORE LOOP / PLAN &amp; PLAY</h3>
 <figure><a href="/assets/folios/alive-en-3-1112.webp" aria-label="CORE LOOP / PLAN &amp; PLAY · Full size"><img src="/assets/folios/alive-en-3-1112.webp" width="945" height="231" alt="CORE LOOP / PLAN &amp; PLAY" loading="lazy" decoding="async"></a>
-<details><summary>Figure text</summary><div class="figure-copy">
-<span>LEVEL 1</span>
-<span>Plan routes and turns, then press ALIVE.</span>
-<span>The key opens the door and the</span>
-<span>character advances. Observe and revise.</span>
-<span>Playback / image needed</span>
-</div></details>
+
 </figure></div>
 <div class="folio-panel"><h3>PUZZLE DESIGN</h3>
 <p>Work backward from the goal to identify barriers and tools. Build the solution around positioning, prerequisites and timing.</p>
 <h3>Goal · Get the character out of the room</h3>
 <figure><a href="/assets/folios/alive-en-3-124.webp" aria-label="Goal · Get the character out of the room · Full size"><img src="/assets/folios/alive-en-3-124.webp" width="1133" height="425" alt="Goal · Get the character out of the room" loading="lazy" decoding="async"></a>
-<details><summary>Figure text</summary><div class="figure-copy">
-<span>Lock / barrier</span>
-<span>Closed door</span>
-<span>Tied-up key</span>
-<span>Wall blocks</span>
-<span>the route</span>
-<span>Key cannot</span>
-<span>cross the wall</span>
-<span>Character</span>
-<span>arrives too soon</span>
-<span>Key / tool</span>
-<span>Key</span>
-<span>Scissors</span>
-<span>Bomb</span>
-<span>Rock + seesaw</span>
-<span>+ key</span>
-<span>Fire affects</span>
-<span>the character</span>
-<span>Solution / how it works</span>
-<span>Reach the door, then interact to</span>
-<span>unlock it.</span>
-<span>Cut rope before moving the key.</span>
-<span>Detonate in position to open a path.</span>
-<span>Meet in position to launch the key.</span>
-<span>Pause the character to buy time for</span>
-<span>other actions.</span>
-</div></details>
+
 </figure>
 <h3>Level 02 / Add a prerequisite to a familiar solution</h3>
 <figure><a href="/assets/folios/alive-en-3-126.webp" aria-label="Level 02 / Add a prerequisite to a familiar solution · Full size"><img src="/assets/folios/alive-en-3-126.webp" width="1133" height="266" alt="Level 02 / Add a prerequisite to a familiar solution" loading="lazy" decoding="async"></a>
-<details><summary>Figure text</summary><div class="figure-copy">
-<span>3</span>
-<span>1</span>
-<span>2</span>
-<span>The goal stays the same, but the key is tied up.</span>
-<span>Freeing it makes the next action possible.</span>
-<span>1 Cut rope</span>
-<span>3 Unlock door</span>
-<span>2 Move key</span>
-<span>Character exits</span>
-</div></details>
+
 </figure>
 <h3>Level 04 / Combine objects into one solution</h3>
 <figure><a href="/assets/folios/alive-en-3-128.webp" aria-label="Level 04 / Combine objects into one solution · Full size"><img src="/assets/folios/alive-en-3-128.webp" width="1133" height="315" alt="Level 04 / Combine objects into one solution" loading="lazy" decoding="async"></a>
-<details><summary>Figure text</summary><div class="figure-copy">
-<span>1</span>
-<span>2</span>
-<span>3</span>
-<span>A wall blocks the route. Bring the rock, seesaw and</span>
-<span>key together to achieve what no single object can.</span>
-<span>Combined interaction → Launch the key</span>
-<span>1 Rock</span>
-<span>2 Seesaw</span>
-<span>3 Key</span>
-</div></details>
+
 </figure></div>
 <div class="folio-panel"><h3>PUZZLE PRESENTATION</h3>
 <p>Use titles, familiar object functions and spatial relationships to suggest an approach. Show planned routes and outcomes so players can revise their understanding.</p>
 <h3>01 Show the goal and the tools</h3>
 <figure><a href="/assets/folios/alive-en-3-134.webp" aria-label="01 Show the goal and the tools · Full size"><img src="/assets/folios/alive-en-3-134.webp" width="1017" height="348" alt="01 Show the goal and the tools" loading="lazy" decoding="async"></a>
-<details><summary>Figure text</summary><div class="figure-copy">
-<span>1</span>
-<span>THE KEY TO</span>
-<span>THE DOOR</span>
-<span>LEVEL 1</span>
-<span>3</span>
-<span>2</span>
-</div></details>
+
 </figure>
 <p>① The title hints at a use. ② The key can be scripted. ③ The door is the barrier. Together, they suggest trying to unlock it.</p>
 <h3>02 Make the plan visible</h3>
 <figure><a href="/assets/folios/alive-en-3-137.webp" aria-label="02 Make the plan visible · Full size"><img src="/assets/folios/alive-en-3-137.webp" width="1017" height="320" alt="02 Make the plan visible" loading="lazy" decoding="async"></a>
-<details><summary>Figure text</summary><div class="figure-copy">
-<span>Position previews help players check routes. The turn bar</span>
-<span>shows scripted actions and helps them estimate interaction</span>
-<span>timing.</span>
-<span>Planned route ↔ Scripted turns</span>
-</div></details>
+
 </figure>
 <h3>03 Help players diagnose failure</h3>
 <p>Distinct outcomes point to routes, prerequisites or hazard timing.</p>
 <figure><a href="/assets/folios/alive-en-3-1310.webp" aria-label="03 Help players diagnose failure · Full size"><img src="/assets/folios/alive-en-3-1310.webp" width="1017" height="123" alt="03 Help players diagnose failure" loading="lazy" decoding="async"></a>
-<details><summary>Figure text</summary><div class="figure-copy">
-<span>Trapped / image needed</span>
-<span>Check route and prerequisites.</span>
-<span>Burned / image needed</span>
-<span>Check fire and character.</span>
-</div></details>
+
 </figure></div>
 </div>
 </section>
@@ -217,99 +115,27 @@
 <p>I built puzzles around goals, barriers, tools and solutions. Titles, layouts, route previews and failure feedback communicated them. I designed seven levels and their grid layouts.</p>
 <p>With the programmers, I defined a fixed action order. Feedback from teammates and jam players informed my review of the final level and plans for iteration.</p>
 <figure><a href="/assets/folios/alive-en-4-116.webp" aria-label="WORK OVERVIEW · Full size"><img src="/assets/folios/alive-en-4-116.webp" width="603" height="588" alt="WORK OVERVIEW" loading="lazy" decoding="async"></a>
-<details><summary>Figure text</summary><div class="figure-copy">
-<span>Interpret theme and references</span>
-<span>Define core mechanics</span>
-<span>Design puzzles and their clues</span>
-<span>Sequence and build levels</span>
-<span>Implement as a team</span>
-<span>Reflect and iterate</span>
-</div></details>
+
 </figure></div>
 <div class="folio-panel"><h3>01 PLAN THE LEVEL PROGRESSION</h3>
 <p>Introduce new relationships in stages, from unlocking to prerequisites, combinations and interacting events.</p>
 <figure><a href="/assets/folios/alive-en-4-123.webp" aria-label="01 PLAN THE LEVEL PROGRESSION · Full size"><img src="/assets/folios/alive-en-4-123.webp" width="877" height="446" alt="01 PLAN THE LEVEL PROGRESSION" loading="lazy" decoding="async"></a>
-<details><summary>Figure text</summary><div class="figure-copy">
-<span>01</span>
-<span>02</span>
-<span>03</span>
-<span>04</span>
-<span>05</span>
-<span>06</span>
-<span>07</span>
-<span>Key → door</span>
-<span>Scissors → rope</span>
-<span>Bomb → wall</span>
-<span>Rock → seesaw → key</span>
-<span>Fire → character</span>
-<span>Fire and explosion</span>
-<span>Four parallel relationships</span>
-<span>Goal and tool</span>
-<span>Add a prerequisite</span>
-<span>Change the room</span>
-<span>Coordinate 3 objects</span>
-<span>Change timing indirectly</span>
-<span>Coordinate linked events</span>
-<span>Combine the full plan</span>
-</div></details>
+
 </figure>
 <p>Progression · Prerequisites → Combinations → Parallel events</p>
 <h3>PLAYER FEEDBACK / THE FINAL LEVEL</h3>
 <p>I watched teammates and jam players play. Most described the final level as too difficult. The step from individual mechanics to their combined use was too large.</p>
 <figure><a href="/assets/folios/alive-en-4-127.webp" aria-label="PLAYER FEEDBACK / THE FINAL LEVEL · Full size"><img src="/assets/folios/alive-en-4-127.webp" width="877" height="336" alt="PLAYER FEEDBACK / THE FINAL LEVEL" loading="lazy" decoding="async"></a>
-<details><summary>Figure text</summary><div class="figure-copy">
-<span>2</span>
-<span>3</span>
-<span>4</span>
-<span>5</span>
-<span>1</span>
-<span>1</span>
-<span>2</span>
-<span>3</span>
-<span>4</span>
-<span>5</span>
-<span>Key ↔ door</span>
-<span>Fire ↔ character</span>
-<span>Seesaw setup ↔ door</span>
-<span>Bomb ↔ wall</span>
-<span>Scissors ↔ key</span>
-</div></details>
+
 </figure></div>
 <div class="folio-panel"><h3>02 BUILD PUZZLES ON A GRID</h3>
 <p>Place objects, barriers and meeting points on a grid. Count movement and interaction turns, then compare the plan with the playable version.</p>
 <figure><a href="/assets/folios/alive-en-4-133.webp" aria-label="02 BUILD PUZZLES ON A GRID · Full size"><img src="/assets/folios/alive-en-4-133.webp" width="786" height="529" alt="02 BUILD PUZZLES ON A GRID" loading="lazy" decoding="async"></a>
-<details><summary>Figure text</summary><div class="figure-copy">
-<span>Grid distance sets the</span>
-<span>movement cost.</span>
-<span>Interaction adds a turn.</span>
-<span>Place objects → Count moves and interactions</span>
-<span>→ Check prerequisites</span>
-<span>3</span>
-<span>1</span>
-<span>2</span>
-<span>① Scissors ② Key ③ Door</span>
-<span>3</span>
-<span>1</span>
-<span>2</span>
-</div></details>
+
 </figure>
 <h3>03 AGREE ON THE ACTION ORDER</h3>
 <figure><a href="/assets/folios/alive-en-4-135.webp" aria-label="03 AGREE ON THE ACTION ORDER · Full size"><img src="/assets/folios/alive-en-4-135.webp" width="786" height="372" alt="03 AGREE ON THE ACTION ORDER" loading="lazy" decoding="async"></a>
-<details><summary>Figure text</summary><div class="figure-copy">
-<span>I described the fixed order as</span>
-<span>checks, state updates and actions,</span>
-<span>so linked operations would resolve</span>
-<span>predictably.</span>
-<span>The programmers built the</span>
-<span>framework and an editor, letting me</span>
-<span>change object priorities while</span>
-<span>designing levels.</span>
-<span>Read order</span>
-<span>Check</span>
-<span>conditions</span>
-<span>Update state</span>
-<span>Execute action</span>
-</div></details>
+
 </figure>
 <p>I broke each mechanic into checks the code could perform. The programmers suggested implementation changes and provided editing tools for level design.</p></div>
 <div class="folio-panel"><h3>04 REFLECTION &amp; ITERATION</h3>
@@ -317,37 +143,14 @@
 <h3>Parallel events do not add difficulty linearly</h3>
 <p>I treated each extra parallel event as a simple difficulty increase. Players also had to coordinate its effects and timing with other events. This differs from adding distance or prerequisite steps.</p>
 <figure><a href="/assets/folios/alive-en-4-145.webp" aria-label="Parallel events do not add difficulty linearly · Full size"><img src="/assets/folios/alive-en-4-145.webp" width="825" height="303" alt="Parallel events do not add difficulty linearly" loading="lazy" decoding="async"></a>
-<details><summary>Figure text</summary><div class="figure-copy">
-<span>Space and</span>
-<span>routes</span>
-<span>Prerequisites</span>
-<span>Parallel</span>
-<span>events</span>
-<span>How do objects reach their goal or</span>
-<span>meeting point?</span>
-<span>What must happen first?</span>
-<span>How do several events work</span>
-<span>together?</span>
-</div></details>
+
 </figure>
 <p>Assess each parameter separately, then tune the combination using player feedback.</p>
 <h3>NEXT STEPS</h3>
 <h3>REFINE LEVEL COMBINATIONS</h3>
 <p>The jam delivered playable mechanics and seven levels. Next, vary layouts, prerequisites and event combinations separately to locate learning obstacles.</p>
 <figure><a href="/assets/folios/alive-en-4-1410.webp" aria-label="REFINE LEVEL COMBINATIONS · Full size"><img src="/assets/folios/alive-en-4-1410.webp" width="825" height="243" alt="REFINE LEVEL COMBINATIONS" loading="lazy" decoding="async"></a>
-<details><summary>Figure text</summary><div class="figure-copy">
-<span>Keep layouts, event combinations and</span>
-<span>level order editable from the design</span>
-<span>stage, so feedback can lead to</span>
-<span>changes.</span>
-<span>Layouts</span>
-<span>Prerequisites</span>
-<span>Parallel events</span>
-<span>Configure</span>
-<span>Feedback</span>
-<span>Identify</span>
-<span>Test</span>
-</div></details>
+
 </figure></div>
 </div>
 </section>

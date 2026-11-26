@@ -34,3 +34,25 @@
 .original-project .student-label {display:block;font-size:11px;color:var(--muted);font-weight:500;line-height:1.2}
 .original-project .media-grid .sketch img {background:var(--tint)}
 ::selection {color:var(--cover);background:var(--signal)}
+.project-intro {background:var(--cover);color:var(--cover-type);padding:clamp(22px,4.3vw,66px);margin:0 0 28px}
+.project-name {display:flex;align-items:baseline;gap:20px;justify-content:space-between;border-bottom:1px solid #385043;padding-bottom:20px}
+.project-name h1 {font-size:clamp(36px,5.4vw,78px);letter-spacing:-.05em;line-height:1.07;margin:0}
+.project-name time {font:600 13px/1.4 Consolas,monospace;color:var(--signal);white-space:nowrap}
+.project-facts {display:grid;grid-template-columns:1fr 1fr;column-gap:clamp(34px,6vw,95px);row-gap:24px;margin:24px 0 0}
+.project-facts dt {font-size:13px;line-height:1.5;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--signal);margin-bottom:7px}
+.project-facts dd {font-size:16px;line-height:1.65;margin:0;max-width:54ch}
+.project-facts>div:nth-child(-n+2) dd {font-size:clamp(16px,1.28vw,20px)}
+.project-actions {display:flex;align-items:center;flex-wrap:wrap;gap:12px 24px;border-top:1px solid #385043;padding-top:20px;margin-top:25px}
+.project-actions a,.project-actions a:hover {line-height:1.5;font-family:inherit;font-size:15px;font-weight:600;color:var(--signal);background:transparent;border:0;border-radius:0;padding:2px 0;text-decoration:underline;text-underline-offset:4px}
+.project-intro a:focus-visible {outline:2px solid var(--signal);outline-offset:4px}
+.project-opener-art {margin:0 0 24px;text-align:center}
+.project-opener-art img {width:100%;max-height:440px;object-fit:contain;background:var(--cover)}
+.project-opener-art figcaption {font-size:13px;color:var(--muted);margin:5px 0;text-align:left}
+.original-project main>.back {display:inline-block;margin:20px 0 15px;color:var(--muted)}
+@media(max-width:660px){
+  .project-name {align-items:flex-start;flex-direction:column-reverse;gap:6px;padding-bottom:13px}
+  .project-facts {gap:17px 15px;margin-top:17px}
+  .project-facts>div:nth-child(-n+2),.project-facts>div:last-child {grid-column:1/-1}
+  .project-facts dd {font-size:15px}
+  .project-facts dt {margin-bottom:3px}
+}

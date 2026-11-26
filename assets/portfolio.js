@@ -60,7 +60,6 @@ if (gallery) {
   sync();
 }
 
-const basin = document.querySelector('.basin');
 const category = document.querySelector('#category');
 if (category) {
   category.value = new URL(location.href).searchParams.get('category') || '';
@@ -80,17 +79,6 @@ if (category) {
     else next.searchParams.delete('category');
     location.assign(next);
   });
-}
-const modes = [...document.querySelectorAll('[data-view]')];
-function setView(mode) {
-  if (!basin) return;
-  basin.dataset.mode = mode;
-  modes.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.view === mode)));
-}
-if (basin) {
-  const mode = new URL(location.href).searchParams.get('view');
-  setView(['reader','layout'].includes(mode) ? mode : small.matches || chinese ? 'reader' : 'layout');
-  modes.forEach(button => button.addEventListener('click', () => setView(button.dataset.view)));
 }
 const toc = document.querySelector('.contents');
 if (toc) {
@@ -132,7 +120,6 @@ window.addEventListener('hashchange', revealHash);
 if (location.hash) window.addEventListener('load', revealHash, {once:true});
 document.querySelectorAll('[data-language]').forEach(a => a.addEventListener('click', () => {
   const url = new URL(a.href);
-  if (basin) url.searchParams.set('view', basin.dataset.mode);
   const offset = document.querySelector('.bar').getBoundingClientRect().height + 65;
   const inReading = chapters.length && chapters[0].getBoundingClientRect().top <= offset;
   let target;
@@ -141,7 +128,7 @@ document.querySelectorAll('[data-language]').forEach(a => a.addEventListener('cl
     const node = nodes.at(-1);
     target = node && currentChapter?.contains(node) ? node : currentChapter;
   } else if (!chapters.length) {
-    target = [...document.querySelectorAll('#work,#selected-work,#studies,#about')].filter(n => n.getBoundingClientRect().top <= offset).at(-1);
+    target = [...document.querySelectorAll('#personal-projects,#team-projects,#studies,#about')].filter(n => n.getBoundingClientRect().top <= offset).at(-1);
   }
   const explicit = document.getElementById(location.hash.slice(1));
   if (explicit) {
