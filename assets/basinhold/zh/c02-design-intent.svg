@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:lang="zh-CN" viewBox="0 0 520 402" width="520" height="402" role="img" aria-labelledby="title desc">
+<title id="title">从设计问题到设计框架</title><desc id="desc">从「如果我帮助的人是另一个自己」出发，把人物关系转化为可操作的体验。玩家通过行动改变另一人的处境，又从变化中发现线索，线索再引导下一步行动。用设计框架将人物关系、操作与空间连起来。</desc>
+<defs><marker id="tip" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 1L7 4L0 7z" fill="#17694e"/></marker></defs>
+<rect width="520" height="402" fill="#f3f5ee"/>
+<g font-family="system-ui, Microsoft YaHei, PingFang SC, sans-serif" font-size="17" fill="#18342b" text-anchor="middle">
+<g fill="#e1eae1"><rect x="10" y="18" width="144" height="86" rx="8"/><rect x="186" y="18" width="148" height="86" rx="8"/><rect x="366" y="18" width="144" height="86" rx="8"/></g>
+<g font-weight="650" font-size="19"><text x="82" y="49">设计问题</text><text x="260" y="49">设计意图</text><text x="438" y="49">目标体验</text></g>
+<text x="82" y="80">我在帮助谁？</text><text x="260" y="80">让玩家帮助对方</text><text x="438" y="80">在合作中发现联系</text>
+<g fill="none" stroke="#17694e" stroke-width="2" marker-end="url(#tip)"><path d="M158 61h21"/><path d="M338 61h21"/><path d="M438 107v32q0 14-14 14H100q-14 0-14 14v10"/></g>
+<rect x="10" y="184" width="183" height="75" rx="8" fill="#d9ece3"/><rect x="327" y="184" width="183" height="75" rx="8" fill="#efe5d9"/>
+<g font-weight="650" font-size="19"><text x="101" y="215">玩家行动</text><text x="418" y="215">叙事发现</text></g><text x="101" y="241">改变对方的处境</text><text x="418" y="241">把线索连起来</text>
+<g fill="none" stroke="#17694e" stroke-width="2" marker-end="url(#tip)"><path d="M198 211h121"/><path d="M322 238H201"/><path d="M418 262v14q0 14-14 14H274q-14 0-14 14v10"/></g>
+<text x="260" y="201" font-size="15">观察结果</text><text x="260" y="259" font-size="15">再次行动</text>
+<rect x="70" y="321" width="380" height="65" rx="8" fill="#e1eae1"/>
+<text x="260" y="347" font-weight="650" font-size="19">设计框架</text><text x="260" y="372">把人物关系、玩家行动与空间联系起来</text>
+</g></svg>
