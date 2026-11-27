@@ -92,7 +92,7 @@ html[lang=zh-CN] .cover h1 {font-size:min(6.7cqw,91px);letter-spacing:-.035em}
 .basin-zh img,.basin-zh svg{max-width:100%;height:auto}
 .basin-zh .bz-diagram>svg{display:block;margin-inline:auto}
 .basin-zh figure img{margin-inline:auto}
-.basin-zh .board-page>.bz-diagram img{width:auto;max-height:min(74svh,640px)}
+.basin-zh .board-page>.bz-diagram img{max-height:min(74svh,640px);object-fit:contain}
 .basin-zh .board-page blockquote{border-inline-start:3px solid var(--link-ink);margin:1.25em 0;padding:.3em 1em;font-size:1.15rem}
 .basin-zh figcaption,.basin-zh caption{font-size:.9rem;line-height:1.65;color:var(--muted);text-align:left;margin-top:.45em}
 .basin-zh figcaption:empty{display:none}
