@@ -29,16 +29,6 @@ systemDark.addEventListener('change', event => {
 document.querySelectorAll('[data-language]').forEach(link => {
   link.addEventListener('click', () => { link.hash = location.hash; });
 });
-const videoButton = document.querySelector('[data-video]');
-videoButton?.addEventListener('click', () => {
-  const frame = document.createElement('iframe');
-  frame.src = 'https://player.bilibili.com/player.html?bvid=BV14d3xzcEDc&autoplay=0';
-  frame.title = videoButton.dataset.video;
-  frame.allow = 'fullscreen; picture-in-picture';
-  frame.allowFullscreen = true;
-  videoButton.replaceWith(frame);
-  frame.focus();
-});
 const cover = document.querySelector('.hero-visual');
 if (cover) {
   const english = document.documentElement.lang === 'en';

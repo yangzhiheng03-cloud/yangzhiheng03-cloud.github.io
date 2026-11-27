@@ -174,6 +174,9 @@ document.addEventListener('click', event => {
   dialog.querySelector('[data-close]').focus();
 });
 dialog.querySelector('[data-close]').addEventListener('click', () => dialog.close());
+dialog.addEventListener('click', event => {
+  if (event.target === dialog) dialog.close();
+});
 dialog.addEventListener('close', () => returnFocus?.focus({preventScroll:true}));
 for (const [selector,step] of [['[data-light-prev]',-1],['[data-light-next]',1]]) {
   dialog.querySelector(selector).addEventListener('click', () => showImage(step));
